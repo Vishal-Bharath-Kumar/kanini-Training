@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Buffet Restaurant application</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./billscript.js"></script>
+</head>
+<body>
+    <form onsubmit="return billCalculation()">
+    <table>
+        <h1>Delicious Buffet Restaurant</h1>
+            <tr>
+                <td><label for="customerName">Customer Name</label></td>
+                <td><input type="text" name="customerName" id="customerName" placeholder="Enter your name" autofocus required></td>
+            </tr>
+            <tr>
+                <td><label for="contactNo">Contact No</label></td>
+                <td ><input type="tel" name="contactNo" id="contactNo" placeholder="Enter your mobile number" required></td>
+            </tr>
+            <tr>
+                <td><label for="bookingDate">Email</label></td>
+                <td><input type="date" id="bookingDate"  required></td>
+            </tr>
+            <tr>
+                <td>Timings</td>
+                <td><input type="radio" id="session1" name="Timings" value="1-4pm" >
+                    <label for="session1">1-4pm</label>
+                    <input type="radio" id="session2" name="Timings" value="4-7pm">
+                    <label for="session2">4-7pm</label>
+                    <input type="radio" id="session3" name="Timings" value="7-10pm">
+                    <label for="session3">7-10pm</label></td>
+            </tr>
+            <tr>
+                <td><label>Vegetarian</label></td>
+                <td>
+                    <table class="table2">
+                        <tr >
+                            <td class="id2">
+                                <label> Adult</label>
+                            </td>
+                            <td class="id2">
+                                <input type="number" required min="0" id="vegAdult">
+                            </td>
+                        </tr>
+                        <tr >
+                            <td class="id2">
+                                <label>Kids(5-9yrs)</label>
+                            </td>
+                            <td class="id2">
+                                <input type="number" required min="0" id="vegKids">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><label>Non-Vegetarian</label></td>
+                <td>
+                    <table class="table2">
+                        <tr>
+                            <td class="id2">
+                                <label> Adult</label>
+                            </td>
+                            <td class="id2">
+                                <input type="number"  min="0" required id="nonVegAdult">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="id2">
+                                <label>Kids(5-9yrs)</label>
+                            </td>
+                            <td class="id2">
+                                <input type="number"  min="0" required id="nonVegKids">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Occasion</td>
+                <td id="list">
+                    <input list="occasion" name="Occasion" id="Occasion" required autocomplete="on">
+                    <datalist id="occasion">
+                        <option value="Team dinner"></option>
+                        <option value="Family reunion"></option>
+                        <option value="Party" selected></option>
+                        <option value="Birthday celebration"></option>
+                        <option value="Team lunch"></option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Parking</td>
+                <td>
+                    <input type="checkbox" id="parking" name="Parking">
+                    <label for="Parking">Parking Required</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" id="submit" >Submit</button>
+                </td>
+                <td>
+                    <button type="reset" id="reset" >Clear</button>
+                </td>
+            </tr>
+            
+            
+            
+    </table>
+    <div id="result">
+             
+    </div>
+    </form>
+    
+
+    
+    
+</body>
+</html>

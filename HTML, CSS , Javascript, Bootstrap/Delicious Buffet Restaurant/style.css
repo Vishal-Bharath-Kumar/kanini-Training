@@ -1,0 +1,49 @@
+body{
+    background-color: #9370DB;
+    font-family: arial;
+    font-weight: bold;
+}
+h1{
+    color: #FFFFFF;
+    font-family: Arial;
+    font-style: italic;
+    background-color: #ff6347;
+    text-align: center;
+}
+td{
+   padding: 2px 5px;
+}
+.table2, .id2{
+    border: 1px solid white;
+    background-color:orange;
+    border-collapse: collapse;
+
+}
+#nonVegAdult,
+#nonVegKids,
+#vegAdult,
+#vegKids{
+
+    width: 40px;
+}
+
+td{
+    padding-bottom: 5px;
+
+}
+.inp{
+    width: 40px;
+}
+#submit,#reset{
+    font-weight: bold;
+    font-family: Bahnschrift;
+    background-color: #ffdead;
+    width: 13em;
+    height: 35px;
+}
+#result{
+    font-family: Bahnschrift;
+    font-size: 24px;
+    font-weight: bold;
+    color: #800000;
+}
