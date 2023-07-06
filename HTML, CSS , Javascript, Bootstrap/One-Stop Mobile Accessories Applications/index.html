@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Stop Mobile Accessories Application</title>
+
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    table,tr,td,th{
+        
+        border-radius: 5px;
+        padding: 7px;
+        color: #08088A;
+        text-align: justify;
+    }
+    .bg{
+        background: linear-gradient(to right,#000080,#0000cd,#0000ff,#00008b,#191970);
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+    }
+    h3{
+        text-align: center;
+        color: #FFFFFF;
+    }
+    table{
+        margin-left:auto;
+        margin-right: auto;
+        background-color:#FFFFFF;
+
+    }
+    .title1,.title2,.title3{
+        color: #08088A;
+    }
+    .title1,.title2{
+        text-align: center;
+    }
+
+    #order{
+        color: #08088A;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+    }
+    div{
+        text-align: center; 
+        color: #FFFFFF;
+    }
+    #address{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #name,#phoneNumber,#emailId{
+        padding-right: 254px;
+    }
+
+</style>
+<script src="./script.js"></script>
+</head>
+<body>
+    <div class="bg">
+    <h3>One-Stop Mobile Accessories</h3>
+    <table border="2px">
+        <tr>
+        <th colspan="2" class="title1">Personal Details</th>
+        </tr>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" id="name" onblur="validateName()" autofocus required></td>
+            </tr>
+            <tr>
+                <td><label for="phoneNumber">Phone Number</label></td>
+                <td ><input type="tel" name="phoneNumber" id="phoneNumber" onblur="validateContactNo()" required></td>
+            </tr>
+            <tr>
+                <td><label for="emailId">Email</label></td>
+                <td><input type="email" id="emailId" onblur="emailValidation()" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Delivery Address</label></td>
+                <td><textarea id="address" rows="4" cols="50" onblur="validateAddress()" required></textarea></td>
+            </tr>
+    
+        <tr>
+            <th colspan="2" class="title2">Combo Offers(Save upto Rs.400 on each combo!!)</th>
+        </tr>
+        
+            <tr>
+                <td rowspan="6">
+                <input type="checkbox" id="option1" name="comboOffers" value="">
+                <label for="option1"><b>SanDisk 32GB micro SDHC Memory Card + iXCC Micro-USB cable</b> </label><br><br>
+            
+            
+                <input type="checkbox" id="option2" name="comboOffers" value="">
+                <label for="option2"><b>SanDisk Cruzer Blade 32GB Pen Drive + Samsung Type B 15W Travel Adaptor</b> </label><br><br>
+            
+            
+                <input type="checkbox" id="option3" name="comboOffers" value="">
+                <label for="option3"><b>Sony WF-1000XM3 Head Phone + SanDisk 16GB micro SDHC Memory Card </b> </label><br><br>
+            
+            
+                <input type="checkbox" id="option4" name="comboOffers" value="">
+                <label for="option4"><b>Mpow Car Phone Mount + Zebroni 1 Amp Turbo Car Mobile Charger</b> </label><br><br>
+            
+            
+                <input type="checkbox" id="option5" name="comboOffers" value="">
+                <label for="option5"><b>Tribit XSound Go Bluetooth Speaker + Mpow Car Phone Mount</b> </label><br>
+                </td>
+            </tr>
+             
+                <tr>
+                    <td>
+                    Rs 799/- only
+                    </td>
+                </tr>    
+                <tr>
+                    <td >
+                    Rs 899/- only
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Rs 1199/- only
+                    </td>
+                </tr>    
+                <tr>
+                    <td>
+                    Rs 299/- only
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Rs 999/- only
+                    </td>
+                </tr>
+            
+            <tr>
+                <th colspan="2" class="title">
+            * Enjoy 20% discount on purchasing combos worth 2000 and above !!
+                </th>
+            </tr>
+        
+    </table>
+    <br>
+    
+    <input type="submit" value="PLACE ORDER" id="order" onclick="costCalculation()"/>
+    <br>
+    <div id="result">
+    </div>
+    
+    
+</body>
+</html>
