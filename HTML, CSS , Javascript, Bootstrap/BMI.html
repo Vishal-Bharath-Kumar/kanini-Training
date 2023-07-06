@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        .container {
+            max-width: 600px;
+            
+            text-align: center;
+            margin-top: 200px;
+            margin-left: 480px;
+          }
+          
+          h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 24px;
+          }
+          
+          form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          
+          label {
+            font-size: 24px;
+            margin-bottom: 8px;
+          }
+          
+          input[type="text"] {
+            font-size: 18px;
+            padding: 8px;
+            margin-bottom: 16px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+          
+          button {
+            font-size: 24px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+          }
+          
+          button:hover {
+            background-color: #3e8e41;
+          }
+          
+          #result {
+            font-size: 36px;
+            font-weight: 600;
+            margin-top: 24px;
+          }
+          
+    </style>
+    <script>
+        function calculateBMI() {
+            const heightInput = document.getElementById("height");
+            const weightInput = document.getElementById("weight");
+            const resultDiv = document.getElementById("result");
+          
+            const height = parseFloat(heightInput.value);
+            const weight = parseFloat(weightInput.value);
+          
+            const bmi = weight / ((height / 100) ** 2);
+            const bmiRounded = Math.round(bmi * 10) / 10;
+          
+            let message;
+            if (bmi < 18.5) {
+              message = `Your BMI is ${bmiRounded}. You are underweight.`;
+            } else if (bmi < 25) {
+              message = `Your BMI is ${bmiRounded}. You have a normal weight.`;
+            } else if (bmi < 30) {
+              message = `Your BMI is ${bmiRounded}. You are overweight.`;
+            } else {
+              message = `Your BMI is ${bmiRounded}. You are obese.`;
+            }
+          
+            resultDiv.textContent = message;
+          }
+          
+    </script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form>
+          <label for="height">Height (cm):</label>
+          <input type="text" id="height" placeholder="Enter your height">
+  
+          <label for="weight">Weight (kg):</label>
+          <input type="text" id="weight" placeholder="Enter your weight">
+  
+          <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+  
+          <div id="result"></div>
+        </form>
+      </div>
+      
+</body>
+</html>
