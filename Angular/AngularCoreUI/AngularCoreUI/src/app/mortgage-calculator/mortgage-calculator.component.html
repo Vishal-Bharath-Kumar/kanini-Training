@@ -1,0 +1,50 @@
+<style>
+    .form {
+      width: 400px;
+      /* margin: 0 auto; */
+      background-color: rgba(169, 253, 59, 0.584);
+      padding: 20px;
+      margin-top: 5px;
+    }
+    .form input {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      
+      
+    }
+   
+    
+  </style>
+<div class="form">
+    <h2>Question 3</h2>
+    <h2>Mortgage Calculator</h2>
+    <form [formGroup]="loanAmt">
+        <div>
+            <label for="puramt">Total Purchase Amount </label>
+            <input id="puramt" name="purchaseAmt" formControlName="purchaseAmt"><br><br>
+        </div>
+        <div>
+            <label for="damt">Down Payment Amount </label>
+            <input id="damt" name="downAmt" formControlName="downAmt"><br><br>
+        </div>
+        <div>
+            <label for="int">Interset Rate </label>
+            <input id="int" name="intRate" formControlName="intRate"><br><br>
+        </div>
+        <div>
+            <label for="rtime">Repayment Time in months </label>
+            <input id="rtime" name="timeMon" formControlName="timeMon"><br>
+        </div>
+        <br><br>
+        <button (click)="calculate()">Calculate</button><br>
+        <div>
+            <p>
+                Loan Amount: {{intPer}}
+            </p>
+            <p>
+                Per Month Payment: {{intPerAmt}}
+            </p>
+        </div>
+    </form>
+</div>

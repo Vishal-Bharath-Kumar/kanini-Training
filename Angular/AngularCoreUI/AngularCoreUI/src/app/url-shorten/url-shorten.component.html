@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Url Form</title>
+  <style>
+    .form {
+      width: 400px;
+      /* margin: 0 auto; */
+      padding: 20px;
+      background-color:rgba(55, 174, 126, 0.525);
+      height: 580px;
+    }
+    .form input {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .url {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      width: 300px;
+    }
+    
+  </style>
+</head>
+<body>
+<div class="form">
+    <h2>Question 2</h2>
+    <h2>Shorten URL</h2>
+    <form [formGroup]="myForm" novalidate>
+        <label>Input a Url :</label>
+        <input type="text" class="url" name="url" formControlName="url" required placeholder="Enter full URL">
+
+        <br><br>
+        <button type="submit" [disabled]="!myForm.valid" (click)="shortenUrl()">Submit</button>
+        <button type="submit" [disabled]="!myForm.valid" (click)="copy()" >Copy URL</button>
+        <br>
+        The shortened Url is {{ final }}
+    </form>
+</div>
+</body>
+</html>
+
+<!-- <app-mortgage-calculator></app-mortgage-calculator> -->
