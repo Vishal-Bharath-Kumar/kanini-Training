@@ -1,0 +1,442 @@
+body{
+    background-image: linear-gradient( to top, rgba(81, 162, 255, 0.795),rgba(150, 216, 88, 0.832));
+    background-attachment: scroll;
+    margin: 0%;
+}
+* {box-sizing: border-box;}
+
+
+input[type=text], input[type=tel], input[type=date] , input[list="Payment Method"] {
+  width: 30%;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display:inline-block;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=tel]:focus, input[type=date]:focus , datalist[option]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.inputbox{
+    display: inline;
+}
+
+
+.signupbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px ;
+  margin: 10px 1;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+  justify-content: space-between;
+  width: 20%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; 
+  left: 240px;
+  top: 100px;
+  width: 70%;
+  height: 70%; 
+  background-color: #0051ff00;
+  padding-top: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  border: 5px solid #f8f4f4;
+  width: 70%; 
+  margin: 5px auto 15px auto;
+}
+
+.close {
+  position: absolute;
+  right: 110px;
+  top: 1px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}  
+.head{
+    background-color: rgb(255, 250, 250);
+    display: flex;  
+    justify-content:space-between;
+}
+.org_name{
+    font-size: xx-large;
+    font-family: cursive;
+    padding: 18px;
+    background-image:linear-gradient(to right,white,rgba(91, 183, 208, 0.808),white);
+    width: 1100px;
+    text-align: center;
+}
+
+.search{
+    padding: 28px;
+    display: flex;
+    
+}
+.imgsearch{
+    padding-left: 6px;
+    padding-top: 5px;
+}
+
+.main_nav li {
+    display:inline-block;
+
+}
+.main_nav li a{
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+    font-family: fantasy;
+    font-size: x-large;
+}
+
+.main_nav li a{
+    overflow: hidden;
+    text-decoration:solid;
+    padding-right: 20px;
+    
+}
+#list{
+    float: right;
+
+}
+.main_menu{
+    background-color: rgb(92, 93, 89);
+    padding: 1px;
+
+}
+.main_nav li a:hover{
+    color: rgba(151, 240, 82, 0.959);
+}
+.main_cont{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#cont1_title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+#cont1_para{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    font-size: larger;
+    text-align: justify;
+}
+#cont1_para:hover{
+    overflow: visible;
+    white-space:pre-wrap;
+
+}
+.ind_img{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ind_img1, .ind_img2, .ind_img3, .ind_img4{
+    transition: transform 0.2s;
+}
+.ind_img1:hover,.ind_img2:hover,.ind_img3:hover,.ind_img4:hover{
+    transform: scale(1.1);
+    filter: saturate(1);
+}    
+.ind_img1{
+    background: url("./IMG/Himachal1.jpg") no-repeat;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    filter:saturate(0.5);
+    border-radius: 20px;
+}
+.ind_img2{
+    background: url("./IMG/Andaman1.jpg") no-repeat;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    filter:saturate(0.5);
+    border-radius: 20px;
+}
+.ind_img3{
+    background: url("./IMG/Rajasthan.jpg") no-repeat;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    filter:saturate(0.5);
+    border-radius: 20px;
+}
+.ind_img4{
+    background: url("./IMG/Uttarakhand.jpg") no-repeat;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    filter:saturate(0.5);
+    border-radius: 20px;
+   
+}
+.ind_txt1{
+    font-family: fantasy;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    text-shadow: 2px 2px black;
+}
+.ind_txt2{
+    font-family: fantasy;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding-top: 255px;
+    padding-left: 5px;
+}
+.ind_txt3{
+    font-family: fantasy;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    text-shadow: 2px 2px black;
+}
+.ind_txt4{
+    font-family: fantasy;
+    font-size: large;
+    color: rgb(0, 0, 0); 
+    padding-top: 255px;
+    padding-left: 5px;
+}
+.ind_txt5{
+    font-family: fantasy;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    text-shadow: 2px 2px black;
+}
+.ind_txt6{
+    font-family:fantasy;
+    font-size: large;
+    color: rgb(0, 0, 0); 
+    padding-top: 255px;
+    padding-left: 5px;
+}
+.ind_txt7{
+    font-family: fantasy;
+    font-size: larger;
+    color: rgb(255, 255, 254);
+    padding-left: 10px;
+    text-shadow: 2px 3px black;
+}
+.ind_txt8{
+    font-family: fantasy;
+    font-size: large;
+    color:rgb(0, 0, 0); 
+    padding-top: 255px;
+    padding-left: 5px;
+}
+
+#cont2_title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+#cont2_para{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    font-size: larger;
+    text-align: justify;
+}
+#cont2_para:hover{
+    overflow: visible;
+    white-space:pre-wrap;
+
+}
+.inter_img{
+    display: flex;
+    justify-content: space-between;
+}
+.inter_img1,.inter_img2,.inter_img3,.inter_img4{
+    transition: transform 0.2s;
+}
+.inter_img1:hover,.inter_img2:hover,.inter_img3:hover,.inter_img4:hover{
+    transform: scale(1.1);
+    filter: saturate(1);
+}
+.inter_img1{
+    background: url("./IMG/Dubai.jpg") no-repeat;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    filter:saturate(0.5);
+    border-radius: 20px;
+} 
+.inter_img2{
+    background: url("./IMG/Japan-Banner.jpg") no-repeat;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    filter:saturate(0.5);
+    border-radius: 20px;
+} 
+.inter_img3{
+    background: url("./IMG/Thailand.jpg") no-repeat;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    filter:saturate(0.5);
+    border-radius: 20px;
+} 
+.inter_img4{
+    background: url("./IMG/Vietnam.jpg") no-repeat;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    filter:saturate(0.5);
+    border-radius: 20px;
+}  
+.inter_txt1{
+    font-family: fantasy;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    text-shadow: 2px 3px black;
+}
+.inter_txt2{
+    font-family: fantasy;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding-top: 255px;
+    padding-left: 5px;
+}  
+.inter_txt3{
+    font-family: fantasy;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    text-shadow: 2px 3px black;
+}
+.inter_txt4{
+    font-family: fantasy;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding-top: 255px;
+    padding-left: 5px;
+}  
+.inter_txt5{
+    font-family: fantasy;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    text-shadow: 2px 3px black;
+}
+.inter_txt6{
+    font-family: fantasy;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding-top: 255px;
+    padding-left: 5px;
+}  
+.inter_txt7{
+    font-family: fantasy;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    text-shadow: 2px 3px black;
+}
+.inter_txt8{
+    font-family: fantasy;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    padding-top: 255px;
+    padding-left: 5px;
+}                                      
+.reg{
+    text-align: center;
+}
+#reg_bt{
+    padding: 20px;
+    border-radius: 30px;
+    width: 20%;
+    font-size: xx-large;
+    font-family: fantasy;
+    background-color:  rgb(255, 255, 255);
+}
+#reg_bt a{
+    text-decoration: none;
+    color: black;
+
+}
+#reg_bt:hover{
+    background-color: rgba(150, 216, 88, 0.832);
+    box-shadow: 0 12px 16px 0;
+}
+#reg_bt:active{
+    background-color: rgba(81, 162, 255, 0.795);
+}
+.vdo{
+    padding-left: 25px;
+    padding-right: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#iframe2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer1{
+    
+    margin-left: 50px;
+}
+.footer2{
+   
+}
+.footer3{
+    margin-right: 80px;
+}
+.footermain{
+    display: flex;
+    justify-content: space-between;
+}
+.footermain{
+    padding-bottom: 20px;
+}
+.copyrights{
+    text-align: center;
+    background-color:rgb(92, 93, 89);
+    padding: 20px;
+    color: white;
+}
