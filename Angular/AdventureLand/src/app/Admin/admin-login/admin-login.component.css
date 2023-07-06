@@ -1,0 +1,124 @@
+
+.login-form {
+    /* text-align: center; */
+    margin-top: 0%;
+    padding: 60px;
+  }
+  .form{
+    padding-top: 8%;
+    border-style: none;
+  
+  }
+  .card {
+    padding: 20px;
+    background-image: url("src\assets\login image.jpg");
+    background-repeat: no-repeat;
+    border-style: none;
+    /* border: 3px solid #279ec2; */
+    
+  }
+  
+  h2{
+    color: #279ec2;
+    text-align:center;
+    margin-left: 400px;
+  }
+  h2::after{
+    color: aliceblue;
+  }
+  h2 a{
+    text-decoration: none;
+  }
+  /* === removing default button style ===*/
+  .button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  .row{
+    text-align:center;
+    margin-left: 500px;
+  }
+  ul{
+    text-align: center;
+    color: red;
+  }
+  .textdanger{
+    color: red;
+  }
+  /* Input Style*/
+.input {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #7a9cc6;
+   }
+   
+   .input::placeholder {
+    color: #777;
+   }
+   
+   .input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   svg
+   {
+    font-weight:bold;
+    max-width:600px;
+    font-size: 100px;
+    }
+
+  /* button styling */
+  
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #279ec2;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    margin-left: 880px;
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  a:hover{
+    text-decoration: none;
+    color:darksalmon
+  }

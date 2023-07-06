@@ -1,0 +1,76 @@
+<div class="form">
+    <div class="login-form">
+       <div class="card">
+         <form class="user-login" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+           <div class="row">
+               <svg viewbox="0 0 100 20">
+                   <defs>
+                     <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                       <stop offset="5%" stop-color="#279ec2"/>
+                       <stop offset="95%" stop-color="#123752"/>
+                     </linearGradient>
+                     <pattern id="wave" x="0" y="0" width="120" height="30" patternUnits="userSpaceOnUse">
+                       <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                         <animateTransform
+                             attributeName="transform"
+                             begin="0s"
+                             dur="1.5s"
+                             type="translate"
+                             from="0,0"
+                             to="40,0"
+                             repeatCount="indefinite" />
+                       </path>
+                     </pattern>
+                   </defs>
+                   <text text-anchor="middle" x="450" y="90" font-size="70" fill="url(#wave)"  fill-opacity="0.8">ADMIN</text>
+                   <text text-anchor="middle" x="450" y="90" font-size="70" fill="url(#gradient)" fill-opacity="0.5">ADMIN</text>
+                 </svg>
+            
+             <div class="col-md-12 roundedTextBox mb-3">
+               
+               
+              
+               <input type="email" class="input" id="inputEmail" formControlName="email" placeholder="Enter Email">
+               <!-- <small id="emailHelp" class="form-text text-muted ml-2">We'll never share your email with anyone else.</small> -->
+               <div *ngIf="submitted && formControl['email'].errors" class="textdanger">
+                 <div *ngIf="formControl['email'].errors['email']">Email must be valid.</div>
+                 <div *ngIf="formControl['email'].errors['required']">Email is required.</div>
+               </div>
+             </div>
+             <br>
+             <br>
+             <div class="col-md-12 roundedTextBox mb-3">
+               
+               <input type="password" class="input" id="inputPassword" formControlName="password" placeholder="Enter Password">
+               <div *ngIf="submitted && formControl['password'].errors" class="textdanger">
+                 <div *ngIf="formControl['password'].errors['required']">Password is required.</div>
+                 <div *ngIf="formControl['password'].errors['pattern']">
+                   <!-- <h3>Password must contain the following:</h3> -->
+                   <ul>
+                     <li>Password should be alphanumeric</li>
+                     <li>A letter of the password should be capital</li>
+                     <li>Password must contain a special character (@, $, !, &, etc)</li>
+                     <li>Password length must be greater than 7 characters</li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <br>
+           <br>
+           <div class="but">
+            
+             <button data-text="Awesome" class="button" type="button" (click)="onLogin()">
+               <span class="actual-text">&nbsp;Launch&nbsp;</span>
+               <span class="hover-text" aria-hidden="true">&nbsp;Launch&nbsp;</span>
+             
+           </button>
+       
+           </div>
+           <br>
+           
+         </form>
+       </div>
+     </div>
+   </div>  
+   

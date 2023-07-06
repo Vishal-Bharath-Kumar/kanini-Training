@@ -1,0 +1,86 @@
+
+
+
+<!-- Latest compiled JavaScript -->
+<app-admin-navbar></app-admin-navbar>
+<div class="container">
+  <!-- <div class="" *ngFor="let l of landRides"> -->
+    <div class="row">
+      <div class="col-4" *ngFor="let l of landRides">
+        <div class="card">
+          <div class="card-image">
+            <img class="img" src="{{l.rideImage}}" height="250px">
+           
+          </div>
+          <span class="card-title">{{l.landrideName}}</span>
+          <div class="card-content">
+           
+            <p>STATUS : {{l.rideStatus}}</p>
+          </div>
+  
+          <div id="buttons">
+            <button class="btn btn-primary"  data-toggle="modal" data-target="#updateModal" (click)="passId(l.landrideId)">Update</button>
+            <button class="btn btn-danger" (click)=" deletetrainer(l.landrideId)">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-2 card card-inverse text-white bg-success " id="add"  data-toggle="modal" data-target="#myModal" style="height: 366px;">
+      <h1 id="plus"> &plus;</h1>
+     
+
+    </div>
+      </div>
+      
+    
+  </div>
+
+  
+<div class="container">
+  <div class="modal fade" id="updateModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Update Rides Details</h5>
+          <button type="button" class="close btn btn-danger" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form #form="ngForm">
+            <!-- Add your form fields here -->
+            <!-- <div class="form-group">
+              <label>Ride Name:</label>
+              <input type="text" class="form-control" name="name" [(ngModel)]="rides.landrideName">
+            </div> -->
+            <div class="form-group">
+              <label>Ride Name:</label>
+              <input type="text" class="form-control" name="name" [(ngModel)]="rides.landrideName">
+            </div>
+
+            <div class="form-group">
+              <label>Ride status:</label>
+              <input type="text" class="form-control" name="status" [(ngModel)]="rides.rideStatus">
+            </div>
+            <div class="form-group">
+              <label >Ride Image</label>
+              <input type="string" class="form-control" name="image" [(ngModel)]="rides.rideImage">
+            </div>
+            
+            <!-- Add more form fields as needed -->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal"(click)="updateTrainer(id)">Update</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-addland-ride> </app-addland-ride>
+
+
+
+
+
+
