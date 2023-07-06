@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(49, 79, 116, 0.604),rgba(101, 104, 101, 0.1)), url(./img/see&do.jpg);
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+}
+.nav-bar{
+    height: 80px; 
+    background-color: rgba(107, 107, 107, 0.684);
+    position: fixed;
+    width: 100%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+}
+.nav-links ul li a:hover{
+    border-radius: 5px;
+    background-color:rgba(120, 126, 123, 0.752);
+    padding:5px;
+  }
+  
+.btn a{
+    text-decoration: none;
+    color: #ae2f2f;
+}
+.btn a:hover{
+    color: #fff;
+}
+.text-box{
+    padding-top: 100px;
+     text-align:center;
+     color: #fff;
+ }
+ .text-box h2{
+    font-size: 62px;
+ }
+ section{
+    padding-top: 35px;
+ }
+ section h2{
+    padding-left: 75px;
+ }
+ .main-con1{
+    display: flex; 
+    margin: 7px;
+    /* box-shadow: grey 4px 4px 4px 3px ; */
+    width: 42%;
+ }
+.content-2{
+    padding: 10px;
+    background-color:rgb(199, 230, 233);
+    text-align: justify;
+}
+.content-2 p{
+    color: rgb(70, 70, 70);
+}
+.content-1 img{
+    object-fit: cover;
+}
+ .main-con{
+
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .img-1
+ {
+    background: url("./img/redjack.webp") no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 400px;
+    height: 400px;
+ }
+ .img-2
+ {
+    background: url("./img/sleep.webp") no-repeat;
+    background-size: cover;
+    position: relative;
+    width:1000px;
+    height: 400px;
+ }
+ .box1{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.img-3{
+    background: url("./img/shoes.webp") no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 1430px;
+    height: 350px;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.text1{
+    font-size: 36px;
+    color: #fff;
+    padding-top: 65px;
+    padding-left: 65px;
+}
+.text2{
+    width: 50%;
+}
+.txtbox1{
+    padding-right: 30px;
+}
+.last-btn{
+    padding-top: 15px;
+}
+.footer-col{
+    background-color: rgba(133, 160, 146, 0.175) !important;
+}
+.text-center{
+    background-color: rgba(0, 0, 0, 0.2);;
+}
+
+
+
+@media screen and (max-width: 1280px){
+    
+    .main-con1{
+        display: block;
+        width: 23.5%;
+    }
+}
+@media screen and (max-width: 1150px){
+    .main-con1{
+        display: block;
+        width: 29.5%;
+    }
+}
+@media screen and (max-width: 981px){
+    section h2{
+        text-align: center;
+    }
+    .main-con{
+        display: block;
+        margin-left: 33%;
+    }
+    .main-con1{
+        display: block;
+        width: 54.5%;
+    }
+}
+@media screen and (max-width: 781px){
+    .main-con{
+        display: block;
+        margin-left: 28%;
+    }
+    .main-con1{
+        display: block;
+        width: 54.5%;
+    }
+}
+@media screen and (max-width: 600px){
+    .main-con{
+        display: block;
+        margin-left: 15%;
+    }
+    .main-con1{
+        display: block;
+        width: 65.5%;
+    }
+}
+@media screen and (max-width: 414px){
+    .main-con{
+        display: block;
+        margin-left: 8%;
+    }
+    .main-con1{
+        display: block;
+        width: 79%;
+    }
+}
+@media screen and (max-width: 393px){
+    .main-con{
+        display: block;
+    }
+    .main-con1{
+        display: block;
+        width: 84%;
+    }
+}
+@media  screen and (max-width: 375px){
+    .main-con{
+        display: block;
+    }
+    .main-con1{
+        display: block;
+        width: 87%;
+    }
+}
+@media  screen and (max-width: 360px){
+    .main-con{
+        display: block;
+    }
+    .main-con1{
+        display: block;
+        width: 91%;
+    }
+}

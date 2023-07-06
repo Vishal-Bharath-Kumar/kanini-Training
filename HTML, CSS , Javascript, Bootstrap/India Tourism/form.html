@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="./form.css">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="icon" href="./img/logo.png">
+</head>
+  <body oncontextmenu="return false">
+    <div class="container">
+      <h1>Book Your Dream Vacation Now</h1>
+      <form action="" name="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" pattern="[a-zA-Z\s]+" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" maxlength="10" pattern="[0-9]{10}" required>
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required autocomplete="on">
+          <option value="">--Select Destination--</option>
+          <option value="andaman">Andaman</option>
+          <option value="delhi">Delhi</option>
+          <option value="goa">Goa</option>
+          <option value="rajasthan">Rajasthan</option>
+          <option value="tamilnadu">Tamilnadu</option>
+        </select>
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin"required>
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required>
+        <div class="b">
+        <div class="b1">
+        <label name="brochure">Brochure :</label></div>
+        <div class="b2">
+        <button><a href="./brochure.pdf" download>Download</a>  <i class="fa fa-download"></i> </button></div>
+        </div><br>
+        <input type="submit" value="Book Now">
+      </form>
+    </div>
+    <script src="./form.js"></script>
+    
+  </body>
+
+
+
+</html>

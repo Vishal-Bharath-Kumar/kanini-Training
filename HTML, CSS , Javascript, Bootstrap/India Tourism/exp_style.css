@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(to top,rgba(28, 27, 27, 0.571),rgba(53, 80, 112, 0.271)),url(./img/exp);
+}    
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar{
+    height: 80px; 
+    background-color: rgba(107, 107, 107, 0.684);
+    position: fixed;
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.nav-links ul li a:hover{
+    border-radius: 5px;
+    background-color:rgba(120, 126, 123, 0.752);
+    padding:5px;
+  }
+  
+.button{
+    padding-top: 15px;
+}
+.btn a{
+    text-decoration: none;
+    color: #ae2f2f;
+}
+.btn a:hover{
+    color: #fff;
+}
+.text-box{
+ padding-top: 100px;
+  text-align: left;
+  color: #fff;
+  margin-left: 100px;
+}
+.text-box button{
+    margin-left: 150px;
+}
+.text-box h2{
+    font-size: 62px;
+
+}
+.content-1 h2{
+    text-align: center;
+}
+.row{
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+.title{
+    font-family: fantasy;
+    font-size:larger !important;
+}
+.card{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    background-color: rgb(216, 231, 232);
+}
+.card img{
+    width: auto;
+    height: 200px;
+}
+.card-subtitle{
+    color: rgba(73, 72, 72, 0.891);
+}
+h5{
+    padding-top: 5px !important;
+}
+.checked {
+    color: orange;
+}
+.footer-col{
+    background-color: rgba(133, 160, 146, 0.175) !important;
+}
+.text-center{
+    background-color: rgba(0, 0, 0, 0.2);;
+}
+#count1,#count2,#count3,#count4{
+    font-size: small;
+    padding-left: 5px;
+}
+@media  screen and (max-width: 600px){
+    .text-box h2{
+        font-size: 36px;
+    
+    }
+    .text-box button{
+        margin-left: 70px;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: block;
+        padding: 2px 5px 2px 1px;
+        position: relative;
+    }
+    .card{
+        height: 300px;
+        width: 200px;
+        
+    }
+    
+   
+
+
+
+
+
+}
