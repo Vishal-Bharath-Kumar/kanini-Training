@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal_bill</title>
+    <script>
+        let totalSum = total;
+
+        function totalbill() {
+            var x1 = parseInt(document.f1.idli.value);
+            var x2 = parseInt(document.f1.dosa.value);
+            var x3 = parseInt(document.f1.uttappa.value);
+            var x4 = parseInt(document.f1.curdRice.value);
+            var total = (x1 * 40) + (x2 * 50) + (x3 * 80) + (x4 * 30);
+            document.getElementById("total").innerHTML = total;
+            localStorage.setItem('totalB', total);
+
+            // console.log(x);
+
+        }
+
+        function formsub() {
+
+            var name = document.f1.uname.value;
+            document.getElementById("userN").innerHTML = "Hi " + name;
+            var email = document.f1.uemail.value;
+            document.getElementById("userE").innerHTML = "Email: " + email;
+            var phn = document.f1.phn.value;
+            document.getElementById("phn").innerHTML = "Phone No: " + phn;
+
+            document.getElementById("totalBill").innerHTML = "Total Bill is: " + localStorage.getItem('totalB');
+        }
+    </script>
+    <style>
+        body {
+            width: 60%;
+            padding: 10px;
+            border: 4px solid black;
+            background-image: linear-gradient(to top, rgb(65, 178, 239)), rgba(131, 208, 72, 0.783);
+            background-attachment: scroll;
+            margin-right: 400px;
+            margin-left: 250px;
+        }
+        
+        table {
+            width: 80%;
+            height: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: large;
+            font-family: sans-serif;
+        }
+        .form{
+            margin-top: 50px;
+        }
+        
+        .table1 input {
+            width: 400px;
+            padding-top: 2px;
+            padding-bottom: 12px;
+        }
+        
+        .b1 {
+            border: 1px dotted;
+            border-radius: 5px;
+            padding: 5px;
+            color: black;
+            font-size: larger;
+            font-family: sans-serif;
+            margin-top: 15px;
+            margin-left: 80px;
+        }
+        
+        .b1:hover {
+            background-color: rgba(108, 139, 196, 0.744);
+            box-shadow: 0 8px 10px 0;
+        }
+        
+        .b2 {
+            border: 1px dotted;
+            border-radius: 5px;
+            padding: 5px;
+            color: black;
+            font-size: larger;
+            font-family: sans-serif;
+            margin-top: 15px;
+            margin-left: 80px;
+        }
+        
+        .b2:hover {
+            background-color: rgba(108, 139, 196, 0.744);
+            box-shadow: 0 8px 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+    <form name="f1" action="">
+        <div class="table1">
+            <table border="3" style="background-color:rgba(108, 139, 196, 0.377);">
+                <tr>
+                    <th colspan="3">Personal Details</th>
+
+                </tr>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td colspan="2"><input type="text" name="uname"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">E-mail address</label></td>
+                    <td colspan="2"><input type="text" name="uemail"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Phone Number</label></td>
+                    <td colspan="2"><input type="text" name="phn"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Detailed Address</label></td>
+                    <td colspan="2"><input type="text"></td>
+                </tr>
+        </div>
+
+        <tr>
+            <th colspan="3">Order Details</th>
+        </tr>
+
+        <tr id="tr1">
+            <th>Name of Item</th>
+            <th>Cost</th>
+            <th>item/Qty</th>
+        </tr>
+        <tr>
+            <td>Idli </td>
+            <td>Rs.40</td>
+            <td><input type="number" name="idli" id=""></td>
+        </tr>
+        <tr>
+            <td>Dosa </td>
+            <td>Rs.50</td>
+            <td><input type="number" name="dosa" id=""></td>
+        </tr>
+        <tr>
+            <td>Uttappa </td>
+            <td>Rs.80</td>
+            <td><input type="number" name="uttappa" id=""></td>
+        </tr>
+        <tr>
+            <td>Curd Rice </td>
+            <td>Rs.30</td>
+            <td><input type="number" name="curdRice" id=""></td>
+        </tr>
+        <tr>
+            <td colspan="2">Total</td>
+            <td id="total" name="total1"></td>
+        </tr>
+
+        </table>
+
+    </form>
+    <button class="b1" onclick="totalbill()">Show Total bill</button>
+    <br>
+    <button class="b2" onclick="formsub()">Submit</button>
+
+
+
+    <div style="background-color: skyblue; color:black; ">
+        <p id="userN "></p>
+        <p id="userE "></p>
+        <p id="phn "></p>
+        <p id="totalBill "></p>
+    </div>
+</div>
+
+</body>
+
+</html>
