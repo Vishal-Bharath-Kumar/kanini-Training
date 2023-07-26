@@ -1,0 +1,121 @@
+.commondiv{
+    display: flex; 
+    padding: 20px;
+}
+.leftcard{
+    margin-left: 266px;
+    margin-top: 20px;
+}
+.card1{
+    border: solid 1px #E8E8E8;
+}
+.boxsize{
+    width: 500px;
+    height: auto;
+}
+.secondbody{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.bg {
+  background-color: #dff3fb;
+  border-radius: 8px;
+  width: 382px;
+  height: 85px;
+  margin-left: 20px;
+}
+
+.stroke {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 45px;
+  left: 490px;
+  margin-top: 40px;
+  position:absolute;
+  transform: rotate(90deg) scale(1, 1);
+}
+.earnedpoints{
+    color: #717d8a;
+    position: absolute;
+    margin-left: 50px;
+}
+.earned{
+    font: 600 18px "Manrope", sans-serif;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.TestTaken{
+    color: #717d8a;
+    position: absolute;
+    margin-left: 230px;
+}
+.test{
+  font: 600 18px "Manrope", sans-serif;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 265px;
+}
+.combine{
+    display: flex;
+    margin-left: 20px;
+    padding: 10px;
+}
+.contact{
+    margin-left: 20px;
+    font: 600 20px "Manrope", sans-serif;
+}
+
+.assign{
+    background-color: #7bcced;
+    border: 1px solid #7bcced;
+    font-weight: 600;
+}
+.card2{
+    border: solid 1px #E8E8E8;
+}
+.boxsize2{
+    height: auto;
+}
+.combine2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.viewres{
+    background-color: #7bcced;
+    border: 1px solid #7bcced;
+    font-weight: 600;
+    height: 45px;
+    width: 130px;
+    text-align:left;
+    padding: 15px;
+}
+.mainhead1{
+    font-weight: bold;
+
+}
+span{
+    color: #717d8a;
+}
+hr{
+    position: absolute;
+    width: 930px;
+}
+.assignments,.times{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+.image1{
+    width: 80px;
+    height:80px;
+    margin-left: 180px;
+}
+.mediaStyle{
+    width: 180px;
+    height: 30px; 
+    margin-left: 130px;  
+}
+

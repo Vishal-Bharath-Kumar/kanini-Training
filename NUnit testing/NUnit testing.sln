@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest", "NUnit\NUnitTest.csproj", "{B3903764-009B-4314-B36E-DCF0A66CCF32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Math Operations", "Math Operations\Math Operations.csproj", "{883FCFD2-0D1E-4478-B61B-CFEB7B9C75DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3903764-009B-4314-B36E-DCF0A66CCF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3903764-009B-4314-B36E-DCF0A66CCF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3903764-009B-4314-B36E-DCF0A66CCF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3903764-009B-4314-B36E-DCF0A66CCF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883FCFD2-0D1E-4478-B61B-CFEB7B9C75DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883FCFD2-0D1E-4478-B61B-CFEB7B9C75DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883FCFD2-0D1E-4478-B61B-CFEB7B9C75DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883FCFD2-0D1E-4478-B61B-CFEB7B9C75DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F692BDAB-C2EC-4A7F-9FEB-ECEE23C25085}
+	EndGlobalSection
+EndGlobal

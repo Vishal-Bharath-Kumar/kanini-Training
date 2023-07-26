@@ -1,0 +1,152 @@
+*{
+    font-family: manrope;
+    font-size: 14px;
+}
+/* 
+.Available-Assessment{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.select-tags{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+select{
+    width: 350px;
+    height: 56px;
+}
+
+.sort-button{
+    width: 166px;
+    height: 44px;
+    background-color: #b0e1f4;
+    
+} */
+
+
+/* Common styles for all devices */
+* {
+    box-sizing: border-box;
+    font-family: manrope;
+    font-size: 14px;
+  }
+  
+  .Available-Assessment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+  
+  .select-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .select-tags > div {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed for better mobile layout */
+    margin-bottom: 20px;
+  }
+  
+  .select1,
+  .select2,
+  .select3 {
+    margin-right: 20px;
+  }
+  
+  select {
+    width: 100%;
+    height: 56px;
+  }
+  
+  .sort-button {
+    width: 110px;
+    height: 44px;
+    background-color: #b0e1f4;
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  
+  /* Media Queries for responsive layout */
+  @media (max-width: 768px) {
+    .select-tags > div {
+      max-width: 100%;
+    }
+  
+    .sort-button {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .Available-Assessment {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .select-tags {
+      justify-content: center;
+    }
+  
+    .sorts {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
+
+
+
+
+
+.listofassessements-label{
+    font-family: manrope;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24.59px;
+    padding: 15px;
+}
+
+.skill-and-topic{
+    display: flex;
+}
+
+.box{
+    border: solid 2px  lightblue;
+    width: 330px;
+    height: 237px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.ending{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:1150px) {
+    .pagination-container{
+        display: none;
+    }   
+}
+
+@media (max-width:600px) {
+    .List-Of-Assessments{
+        margin-left: -20px;
+    }
+    .MuiPagination-ui{
+        display: block;
+    }
+
+    .flex-prop1{
+        margin:0 auto;
+    }
+}

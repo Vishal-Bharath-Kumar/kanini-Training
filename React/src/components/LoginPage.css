@@ -1,0 +1,176 @@
+
+/* Set overflow to hidden for all elements */
+* {
+    overflow: hidden;
+    font-family: 'Manrope'; 
+}
+ /* Set wrapper to display flex */
+.wrapper {
+    display: flex;
+}
+ /* Set backgrounds width to 57%, height to 100vh, and apply linear gradient background */
+.backgrounds {
+    width: 57%;
+    height: 100vh;
+    background: linear-gradient(134.3deg, #0089ce52 -45.11%, rgba(0, 138, 207, 0.21) 42.59%, rgba(189, 218, 87, 0.15) 90.72%);
+    border-radius: 0px 0px 350px 0px;
+}
+ /* Set topbanner height to 698px, position to relative, and float to right */
+.topbanner {
+    height: 568px;
+    position: relative;
+    float: right;
+}
+ /* Set leftcol float to left */
+.leftcol {
+    float: left;
+}
+ /* Set middlebanner margin left to 260px and margin top to 450px */
+.middlebanner {
+    margin-left: 180px;
+    margin-top: 350px;
+}
+ /* Set mainhead margin left to 260px, font size to 52px, font weight to 800, and position to absolute */
+.mainhead {
+    margin-left: 180px;
+    letter-spacing: 0.01em;
+    font-size: 40px;
+    font-weight: 800; 
+    margin-top: 10px;
+    position: absolute;
+}
+ /* Set subhead margin left to 260px, font size to 38px, margin top to 100px, line height to 38px, letter spacing to 0.02em, and color to #4F5B67 */
+.subhead {
+    margin-left: 180px;
+    font-size: 28px;
+    margin-top: 70px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #4F5B67;
+}
+ /* Set bottombanner height to 500px */
+.bottombanner {
+    margin-top: 10px;
+    height: 300px;
+}
+ /* Set valid to display flex, justify content to center, align items to center, and margin left to 100px */
+.valid {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-left: 100px;
+}
+ /* Set logo width to 220px, height to 30%, margin left to 20px, and margin bottom to 40px */
+.logo {
+    width: 206px;
+    font-weight: 600;
+    height: 68px;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 30px;
+   
+    
+}
+ /* Set forms margin top to 30px and margin left to 15px */
+.forms {
+    margin-top: -10px;
+    margin-left: 35px;
+}
+ /* Set input width to 540px, height to 40px, font size to larger, border to 1px solid #717D8A, border radius to 6px, margin top to 8px, and padding to 26px */
+.input {
+    width: 340px;
+    height: 10px;
+    font-size: larger;
+    border: 1px solid #717D8A;
+    border-radius: 6px;
+    margin-top: 8px;
+    padding: 16px;
+}
+ /* Set btns text align to center, width to 100%, height to 40px, background to #76c8e896, border to 1.5px solid #7BCCED, border radius to 4px, margin top to 60px, and padding to 12px 18px 40px 18px */
+.btns {
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    background: #76c8e896;
+    border: 1.5px solid #7BCCED;
+    border-radius: 4px; 
+    margin-top: 10px;
+    padding: 8px 8px 30px 12px;
+}
+ /* Set signin text decoration to none, font size to 22px, color to black, font weight to 480, display to flex, justify content to center, and align items to center */
+.signin{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 480;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ /* Set signin hover color to black */
+.signin:hover{
+    color: black;
+}
+ /* Set forgot text align to right and margin top to 10px */
+.forgot {
+    text-align: right;
+    margin-top: 10px;
+}
+ /* Set paswrd text decoration to none, color to rgb(118, 118, 118), and font size to 18px */
+.paswrd {
+        text-decoration: none;
+        color: rgb(118, 118, 118);
+        font-size: 14px;
+}
+ /* Set Text font size to 20px, margin bottom to 30px, and color to rgb(118, 118, 118) */
+.Text{
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: rgb(118, 118, 118);
+}
+ /* Set Text2 font size to 20px and color to rgb(118, 118, 118) */
+.Text2{
+    font-size: 14px;
+    margin-bottom: -20px;
+    color: rgb(118, 118, 118);
+}
+ /* Set Text1 font size to 38px and line height to 54px */
+.Text1{
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 0px;
+}
+ /* Set error color to red */
+.error{
+    color: red;
+}
+
+/* This media query targets screens with a maximum width of 820px */
+
+@media only screen and (max-width:820px) {
+
+  /* Selects elements with class "backgrounds" and sets their width to 0% */
+  .backgrounds {
+        width: 0%;
+   }
+
+  /* Selects elements with class "mainhead" and sets their position to relative */
+.mainhead {
+    position: relative;
+}
+
+  /* Selects elements with class "logo" and sets their width to 240px, height to 50%, margin left to 30px, and margin bottom to 80px */
+.logo {
+    width: 240px;
+    height: 80px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+    
+}
+
+  /* Selects elements with class "topbanner" and sets their height to 468px and position to absolute */
+.topbanner {
+    height: 468px;
+    position: absolute;
+}
+}
